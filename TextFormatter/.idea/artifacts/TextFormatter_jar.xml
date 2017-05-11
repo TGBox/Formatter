@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TextFormatter:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/TextFormatter_jar</output-path>
+    <root id="archive" name="TextFormatter.jar">
+      <element id="module-output" name="TextFormatter" />
+    </root>
+  </artifact>
+</component>
