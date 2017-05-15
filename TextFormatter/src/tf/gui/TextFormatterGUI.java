@@ -199,7 +199,7 @@ public class TextFormatterGUI extends JFrame {
      * @param caseSensitive boolean true if only case sensitive letter will be changed, false else.
      * @return the String with the changed chars.
      */
-    private String replaceSingleChar(char unwanted, char replacement, String str,
+    public static String replaceSingleChar(char unwanted, char replacement, String str,
         boolean caseSensitive){
         String replacedString = "";
         if(caseSensitive){
@@ -230,7 +230,7 @@ public class TextFormatterGUI extends JFrame {
         return replacedString;
     }
 
-    private static String replaceSubstring(String unwanted, String replacement, String string,
+    public static String replaceSubstring(String unwanted, String replacement, String string,
         boolean caseSensitive){
         if(!caseSensitive){
             unwanted = "(?i)" + unwanted;
