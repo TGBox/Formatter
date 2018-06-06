@@ -246,6 +246,7 @@ public class TextFormatterGUI extends JFrame {
     if (!caseSensitive) {
       unwanted = "(?i)" + unwanted;
     }
+    // TODO: Check if this addition to the unwanted String is correct.
     Pattern p = Pattern.compile(unwanted);
     Matcher m = p.matcher(string);
     StringBuffer stringBuffer = new StringBuffer();
@@ -269,13 +270,7 @@ public class TextFormatterGUI extends JFrame {
       e.printStackTrace();
     }
     setDefaultLocale(Locale.ENGLISH);
-    invokeLater(new Runnable() {
-      @Override
-      public void run() {
-        new TextFormatterGUI();
-      }
-    });
-
+    invokeLater(TextFormatterGUI::new);
   }
 
 }
