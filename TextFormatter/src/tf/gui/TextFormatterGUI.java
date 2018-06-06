@@ -37,6 +37,9 @@ import javax.swing.WindowConstants;
  */
 public class TextFormatterGUI extends JFrame {
 
+    // TODO: NEEDS CHECKUP FOR ESCAPE CHARACTERS! CURRENTLY  NOT PRINTED IF NO JAVA SYNTAX IS USED!
+    // can easily be altered if escape characters get an added backslash at the beginning.
+
     private JPanel centerPanel, topPanel, replacePanel, inPanel, textInPanel, outPanel, buttonPanel;
     private JLabel infoLabel, inLabel, outLabel, replaceLabel, withLabel;
     private JTextField inField, outField;
